@@ -2,6 +2,6 @@ run PowerShell us Admin
 
 run " Set-ExecutionPolicy -ExecutionPolicy Unrestricted "
 
-go to "C:\Users\zahar\Desktop\Invitation"
+go to "C:\Users\zahar\WebstormProjects\Invitation"
 
 run " http-server "
