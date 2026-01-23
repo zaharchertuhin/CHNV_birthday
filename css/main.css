@@ -240,6 +240,28 @@ input[type="checkbox"], input[type="radio"]{
     color: black;
 }
 
+input[type="checkbox"] {
+    display: none;
+}
+.question {
+    margin-bottom: 25px;
+    border-radius: 25px;
+}
+.question label {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.quest {
+    margin-bottom: 25px;
+    border-radius: 25px;
+}
+
+.quest label {
+    cursor: pointer;
+    padding: 10px;
+}
+
 @media (max-width: 480px) {
     #survey-form {
         max-width: 100%;
