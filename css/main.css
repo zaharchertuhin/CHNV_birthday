@@ -8,6 +8,13 @@
     src: url("../font/Alexander.otf") format("truetype");
 }
 
+:root {
+    --main-bg-color: black; /* #F4F1EC */
+    --main-font-color: #F4F1EC;
+    --main-second-color: #B11226; /* #B11226*/
+    --main-second-font-color: #F4F1EC;
+}
+
 
 html{
     width: 100%;
@@ -18,24 +25,37 @@ html{
 
 body{
     margin: -60px 0 0 0;
-    background-color: #F4F1EC;
-    color: #B11226;
+    background-color: var(--main-bg-color);
+    color: var(--main-second-font-color);
 }
 
 
 p{
     font-family: Vasek, serif;
     font-size: 84px;
+    margin: 10px 0;
 }
 
 h1{
-    color: #B11226;
+    color: var(--main-font-color);
 }
 
 h2{
     font-size: 56px;
-    color: #F4F1EC;
+    color: var(--main-bg-color);
     font-family: Alexander, serif;
+}
+
+.title{
+    color: var(--main-font-color);
+}
+
+.link{
+    cursor: default;text-decoration: none; color: var(--main-font-color);
+}
+
+.squareLink{
+    cursor: default;text-decoration: none; color: var(--main-second-font-color);
 }
 
 ul{
@@ -49,7 +69,7 @@ li{
 
 }
 li h2{
-    color: #B11226;
+    color: var(--main-font-color);
     margin: 10px 0 0 0;
     font-size: 45px;
 }
@@ -57,11 +77,10 @@ li h2{
 hr{
     border: 3px solid;
     border-radius: 3px;
-    color:#B11226;
+    color:var(--main-second-color);
 }
 
 .line{
-
     position: absolute;
     font-size: 45px;
     background: #C9A227;
@@ -77,7 +96,6 @@ hr{
 .lineText{
     margin-top: 15px;
     margin-bottom: 15px;
-
     animation: marquee 5s infinite linear;
 }
 
@@ -114,16 +132,16 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 425px 425px 0 0;
-    height: 1024px;
+    /*border-radius: 425px 425px 0 0;*/
+    /*height: 1024px;*/
 }
 
 .mainVideo img{
     width: 100%;
 
-    position: relative;
-    left: 0;
-    transform: translateY(10%);
+    /*position: relative;*/
+    /*left: 0;*/
+    /*transform: translateY(10%);*/
 }
 
 .event-details {
@@ -136,8 +154,8 @@ hr{
 }
 
 .square {
-    color: #F4F1EC;
-    background-color: #B11226;
+    color: var(--main-bg-color);
+    background-color: var(--main-second-color);
     padding: 20px;
     text-align: center;
     font-family: 'Alexander', sans-serif;
@@ -161,8 +179,8 @@ hr{
 }
 
 .dress-code{
-    background: #B11226;
-    color: #F4F1EC;
+    background: var(--main-second-color);
+    color: var(--main-second-font-color);
     border: 4px solid;
     border-radius: 50px;
     text-align: center;
@@ -185,7 +203,7 @@ hr{
     max-width: 880px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #F4F1EC;
+    background-color: var(--main-bg-color);
     border-radius: 5px;
 }
 
@@ -195,6 +213,16 @@ label {
     margin-bottom: 10px;
 }
 
+.mainLabel{
+    font-family: Alexander ,serif;
+    font-size: 60px;
+    color: var(--main-font-color);
+}
+
+form{
+    border: 2px solid var(--main-second-color);
+    border-radius: 15px;
+}
 
 input[type="text"]{
 
@@ -202,15 +230,15 @@ input[type="text"]{
     height: 100px;
 
     border-radius: 3px;
-    border: 1px solid #B11226;
+    border: 1px solid var(--main-second-color);
     margin-bottom: 10px;
     font-size: 38px;
-    background: #F4F1EC;
-    color: #B11226;
+    background: var(--main-bg-color);
+    color: var(--main-font-color);
 }
 
 input[type="submit"] {
-    background-color: black;
+    background-color: var(--main-second-color);
     width: 100%;
     height: 100px;
     font-size: 56px;
@@ -218,12 +246,12 @@ input[type="submit"] {
     padding: 10px 20px;
     border-radius: 15px;
     cursor: pointer;
-    color: #F4F1EC;
+    color: var(--main-font-color);
 }
 
 input[type="submit"]:hover {
-    background-color: #B11226;
-    color: #F4F1EC;
+    background-color: var(--main-second-font-color);
+    color: var(--main-second-color);
 
 }
 
